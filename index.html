@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ร้านบุญเลิศ เมล็ดพันธุ์ข้าว | จำหน่ายเมล็ดพันธุ์ข้าวคุณภาพ จังหวัดนครสวรรค์</title>
+<meta name="description" content="จำหน่ายเมล็ดพันธุ์ข้าวคุณภาพ คัดเลือกมาตรฐาน เหมาะสำหรับชาวนาและสหกรณ์ในจังหวัดนครสวรรค์ พร้อมบริการให้คำแนะนำและจัดส่ง">
+<meta name="keywords" content="เมล็ดพันธุ์ข้าว, พันธุ์ข้าว, นครสวรรค์, เก้าเลี้ยว, เมล็ดพันธุ์คุณภาพ, ร้านเมล็ดพันธุ์ข้าว">
+<meta name="theme-color" content="#2E7D32">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="public/icons/favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="ร้านบุญเลิศ เมล็ดพันธุ์ข้าว">
+<meta property="og:description" content="คัดเมล็ดพันธุ์ดี เพื่อผลผลิตที่มั่นใจ — จำหน่ายเมล็ดพันธุ์ข้าวคุณภาพ อำเภอเก้าเลี้ยว จังหวัดนครสวรรค์">
+<meta property="og:locale" content="th_TH">
+<meta property="og:image" content="public/images/hero-rice-hands.jpg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ร้านบุญเลิศ เมล็ดพันธุ์ข้าว">
+<meta name="twitter:description" content="คัดเมล็ดพันธุ์ดี เพื่อผลผลิตที่มั่นใจ">
+<meta name="twitter:image" content="public/images/hero-rice-hands.jpg">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "ร้านบุญเลิศ เมล็ดพันธุ์ข้าว",
+  "description": "จำหน่ายเมล็ดพันธุ์ข้าวคุณภาพสำหรับชาวนา กลุ่มเกษตรกร และสหกรณ์การเกษตร",
+  "telephone": "089-959-3342",
+  "priceRange": "฿฿",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "เก้าเลี้ยว",
+    "addressRegion": "นครสวรรค์",
+    "addressCountry": "TH"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --green:#2E7D32;
+    --green-dark:#1F5B23;
+    --brown:#6D4C41;
+    --gold:#C8A951;
+    --cream:#FAF7F0;
+    --text:#333333;
+    --white:#FFFFFF;
+    --radius:14px;
+    --shadow: 0 8px 24px rgba(46,49,20,0.08);
+    --maxw: 1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Sarabun',sans-serif;
+    color:var(--text);
+    background:var(--cream);
+    overflow-x:hidden;
+    -webkit-text-size-adjust:100%;
+  }
+  h1,h2,h3,h4,.display{
+    font-family:'Kanit',sans-serif;
+    margin:0;
+    letter-spacing:.2px;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{margin:0;padding:0;list-style:none;}
+  section{position:relative;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Kanit',sans-serif;font-weight:600;font-size:13px;
+    color:var(--green-dark);letter-spacing:1.5px;text-transform:uppercase;
+    margin-bottom:12px;
+  }
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);display:inline-block;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:'Kanit',sans-serif;font-weight:600;font-size:15px;
+    padding:14px 26px;border-radius:999px;border:none;cursor:pointer;
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:scale(.97);}
+  .btn-primary{background:var(--green);color:#fff;box-shadow:0 10px 20px rgba(46,125,50,.28);}
+  .btn-primary:hover{background:var(--green-dark);}
+  .btn-outline{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.7);}
+  .btn-outline:hover{background:rgba(255,255,255,.12);}
+  .btn-gold{background:var(--gold);color:#3a2f10;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    padding:16px 0;transition:.35s ease;
+  }
+  header.scrolled{
+    background:rgba(250,247,240,.92);backdrop-filter:blur(10px);
+    box-shadow:0 2px 16px rgba(0,0,0,.06);padding:10px 0;
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Kanit',sans-serif;font-weight:700;font-size:18px;color:var(--green-dark);}
+  header.scrolled .brand{color:var(--green-dark);}
+  .brand small{display:block;font-family:'Sarabun';font-weight:400;font-size:11px;color:var(--brown);}
+  .navlinks{display:none;gap:30px;font-family:'Kanit';font-size:14.5px;font-weight:500;}
+  .navlinks a{opacity:.85;transition:opacity .2s;}
+  .navlinks a:hover{opacity:1;color:var(--green-dark);}
+  .header-cta{display:none;}
+  @media(min-width:900px){
+    .navlinks{display:flex;}
+    .header-cta{display:inline-flex;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    min-height:100svh;display:flex;align-items:flex-end;
+    position:relative;
+    background:
+      linear-gradient(180deg, rgba(58,42,18,.15) 0%, rgba(58,42,18,.35) 45%, rgba(30,22,10,.82) 100%),
+      url('public/images/hero-rice-hands.jpg') center 38% / cover no-repeat;
+    padding-top:110px;overflow:hidden;
+  }
+  .hero::before{
+    /* warm grain wash — keeps the photo's natural gold/brown tone, no green tint */
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(200,169,81,.16), rgba(109,76,65,.05) 40%, transparent 60%);
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative;z-index:3;width:100%;padding-bottom:64px;
+    display:flex;flex-direction:column;gap:22px;
+  }
+  .hero h1{font-size:clamp(34px,7vw,64px);color:#fff;line-height:1.08;text-shadow:0 4px 22px rgba(0,0,0,.45);}
+  .hero p.sub{color:#F7EFD9;font-size:clamp(15px,2.2vw,19px);max-width:520px;font-weight:400;text-shadow:0 2px 12px rgba(0,0,0,.35);}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-credit{position:absolute;right:14px;bottom:10px;z-index:3;font-size:10.5px;color:rgba(255,255,255,.55);}
+
+  /* ---------- Section generic ---------- */
+  .section{padding:78px 0;}
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .section-head h2{font-size:clamp(26px,4vw,38px);color:var(--green-dark);line-height:1.25;}
+  .section-head p{margin-top:12px;color:#5b5b52;font-size:15.5px;line-height:1.7;}
+  .band-cream{background:var(--cream);}
+  .band-white{background:#fff;}
+  .band-forest{background:linear-gradient(160deg,var(--green-dark),var(--green));color:#fff;}
+  .band-forest .section-head h2{color:#fff;}
+  .band-forest .section-head p{color:#DCEAD6;}
+
+  .why-head{display:flex;flex-direction:column;gap:24px;align-items:flex-start;}
+  .why-photo{width:100%;max-width:420px;border-radius:var(--radius);box-shadow:var(--shadow);object-fit:cover;aspect-ratio:16/10;}
+  @media(min-width:900px){
+    .why-head{flex-direction:row;justify-content:space-between;align-items:center;}
+    .why-photo{max-width:380px;}
+  }
+
+  /* Features */
+  .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+  .feat-card{
+    background:#fff;border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow);
+    border:1px solid rgba(46,125,50,.08);
+    opacity:0;transform:translateY(18px);transition:.6s cubic-bezier(.2,.7,.2,1);
+  }
+  .feat-card.in{opacity:1;transform:none;}
+  .feat-icon{width:46px;height:46px;border-radius:12px;background:#EAF4E7;display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--green);}
+  .feat-card h3{font-size:17px;color:var(--brown);margin-bottom:6px;}
+  .feat-card p{font-size:14px;color:#666;line-height:1.6;margin:0;}
+
+  /* Products */
+  .prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;}
+  .prod-card{
+    background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+    border:1px solid rgba(109,76,65,.1);display:flex;flex-direction:column;
+    opacity:0;transform:translateY(18px);transition:.6s cubic-bezier(.2,.7,.2,1);
+  }
+  .prod-card.in{opacity:1;transform:none;}
+  .prod-top{
+    height:96px;background:linear-gradient(135deg,#EFE3C8,#F7EFD8);
+    display:flex;align-items:center;justify-content:center;position:relative;
+  }
+  .prod-top svg{width:46px;height:46px;color:var(--gold);}
+  .prod-body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .prod-tag{font-size:11.5px;font-weight:600;color:var(--green-dark);background:#EAF4E7;display:inline-block;padding:3px 10px;border-radius:999px;width:fit-content;}
+  .prod-body h3{font-size:18px;color:var(--brown);}
+  .prod-body p{font-size:13.5px;color:#666;line-height:1.55;margin:0;flex:1;}
+  .prod-actions{display:flex;gap:8px;margin-top:8px;}
+  .prod-actions a{flex:1;text-align:center;font-family:'Kanit';font-weight:600;font-size:13px;padding:10px;border-radius:999px;}
+  .prod-actions .call{background:var(--green);color:#fff;}
+  .prod-actions .info{background:#F1EBDD;color:var(--brown);}
+
+  /* Segments */
+  .seg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;}
+  .seg-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:26px 22px;backdrop-filter:blur(4px);}
+  .seg-card .feat-icon{background:rgba(255,255,255,.15);color:#FCEFC7;}
+  .seg-card h3{font-size:17px;margin-bottom:6px;}
+  .seg-card p{font-size:14px;color:#DCEAD6;line-height:1.6;margin:0;}
+
+  /* Steps */
+  .steps{display:flex;flex-direction:column;gap:0;}
+  .step{display:flex;gap:18px;position:relative;padding-bottom:36px;}
+  .step:last-child{padding-bottom:0;}
+  .step-num{
+    flex:0 0 auto;width:42px;height:42px;border-radius:50%;background:var(--green);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-family:'Kanit';font-weight:700;font-size:16px;
+    position:relative;z-index:2;
+  }
+  .step-line{position:absolute;left:20px;top:42px;bottom:0;width:2px;background:repeating-linear-gradient(180deg,var(--gold) 0 6px, transparent 6px 12px);}
+  .step:last-child .step-line{display:none;}
+  .step-content h4{font-family:'Kanit';font-size:17px;color:var(--brown);margin-bottom:4px;}
+  .step-content p{margin:0;font-size:14px;color:#666;}
+
+  /* Reviews */
+  .review-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;-webkit-overflow-scrolling:touch;}
+  .review-track::-webkit-scrollbar{height:6px;}
+  .review-track::-webkit-scrollbar-thumb{background:#ddd;border-radius:99px;}
+  .review-card{
+    scroll-snap-align:start;flex:0 0 280px;background:#fff;border-radius:var(--radius);
+    padding:22px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.05);
+  }
+  .stars{color:var(--gold);font-size:14px;margin-bottom:10px;}
+  .review-card p{font-size:14px;color:#555;line-height:1.65;margin:0 0 14px;}
+  .review-who{font-family:'Kanit';font-weight:600;font-size:14px;color:var(--brown);}
+  .review-role{font-size:12px;color:#999;}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid rgba(109,76,65,.15);}
+  .faq-q{
+    width:100%;text-align:right;background:none;border:none;padding:18px 0;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;
+    font-family:'Kanit';font-weight:600;font-size:15.5px;color:var(--brown);text-align:left;
+  }
+  .faq-q .plus{transition:transform .3s;color:var(--green);flex:0 0 auto;}
+  .faq-item.open .faq-q .plus{transform:rotate(135deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+  .faq-a p{margin:0 0 18px;font-size:14px;color:#666;line-height:1.7;}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr;gap:24px;}
+  @media(min-width:860px){.contact-grid{grid-template-columns:1.1fr 1fr;}}
+  .map-box{
+    background:#EFE9DA;border-radius:var(--radius);height:320px;
+    display:flex;align-items:center;justify-content:center;color:var(--brown);
+    font-size:14px;text-align:center;padding:20px;border:1px dashed rgba(109,76,65,.4);
+  }
+  .contact-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:28px;}
+  .contact-row{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid #F0EBDD;}
+  .contact-row:last-child{border-bottom:none;}
+  .contact-row .ic{width:42px;height:42px;border-radius:10px;background:#EAF4E7;color:var(--green);display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .contact-row a.phone-link{font-family:'Kanit';font-weight:700;font-size:19px;color:var(--green-dark);}
+
+  /* Footer */
+  footer{background:var(--green-dark);color:#DCEAD6;padding:48px 0 26px;}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.12);}
+  .foot-brand h3{font-family:'Kanit';color:#fff;font-size:19px;}
+  .foot-brand p{font-size:13.5px;color:#BFD9B8;margin-top:6px;max-width:260px;}
+  .foot-copy{text-align:center;font-size:12.5px;color:#9FC498;padding-top:20px;}
+
+  /* Floating actions */
+  .floating{position:fixed;right:18px;bottom:88px;display:flex;flex-direction:column;gap:12px;z-index:70;}
+  .fab{
+    width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    color:#fff;box-shadow:0 10px 22px rgba(0,0,0,.2);transition:transform .2s;
+  }
+  .fab:hover{transform:scale(1.08);}
+  .fab.call{background:var(--green);}
+  .fab.line{background:#06C755;}
+  .fab.map{background:var(--brown);}
+  .fab.top{background:var(--gold);color:#3a2f10;opacity:0;pointer-events:none;transition:opacity .3s;}
+  .fab.top.show{opacity:1;pointer-events:auto;}
+
+  /* Bottom nav (mobile only) */
+  .bottom-nav{
+    position:fixed;bottom:0;left:0;right:0;z-index:65;background:#fff;
+    display:flex;justify-content:space-around;padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+    box-shadow:0 -4px 18px rgba(0,0,0,.08);
+  }
+  .bn-item{display:flex;flex-direction:column;align-items:center;gap:3px;color:#8a8a7f;font-size:10.5px;font-family:'Kanit';flex:1;}
+  .bn-item.active{color:var(--green);}
+  @media(min-width:900px){.bottom-nav{display:none;} .floating{bottom:28px;}}
+
+  ::selection{background:var(--gold);color:#3a2f10;}
+
+  /* reveal utility */
+  .reveal{opacity:0;transform:translateY(18px);transition:.6s cubic-bezier(.2,.7,.2,1);}
+  .reveal.in{opacity:1;transform:none;}
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#2E7D32"/><path d="M24 34c0-10 4-16 10-19-2 8-4 15-10 19z" fill="#C8A951"/><path d="M24 34c0-10-4-16-10-19 2 8 4 15 10 19z" fill="#FAF7F0"/></svg>
+      <div>ร้านบุญเลิศ<small>เมล็ดพันธุ์ข้าว</small></div>
+    </div>
+    <nav class="navlinks">
+      <a href="#products">สินค้า</a>
+      <a href="#why">ทำไมต้องเลือกเรา</a>
+      <a href="#segments">กลุ่มลูกค้า</a>
+      <a href="#steps">ขั้นตอนสั่งซื้อ</a>
+      <a href="#faq">คำถามที่พบบ่อย</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+    <a class="btn btn-primary header-cta" href="tel:0899593342">โทรสั่งซื้อทันที</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <span class="eyebrow" style="color:#fff;">เมล็ดพันธุ์ข้าวคุณภาพ · อ.เก้าเลี้ยว จ.นครสวรรค์</span>
+    <h1>ร้านบุญเลิศ<br>เมล็ดพันธุ์ข้าว</h1>
+    <p class="sub">คัดเมล็ดพันธุ์ดี เพื่อผลผลิตที่มั่นใจ — พร้อมให้คำแนะนำการเลือกพันธุ์ข้าวที่เหมาะกับพื้นที่ปลูกของคุณ</p>
+    <div class="hero-ctas">
+      <a href="tel:0899593342" class="btn btn-primary">📞 โทรเลย 089-959-3342</a>
+      <a href="#products" class="btn btn-outline">ดูสินค้า</a>
+    </div>
+  </div>
+  <div class="hero-credit">ภาพเมล็ดพันธุ์ข้าวจริง</div>
+</section>
+
+<!-- FEATURES -->
+<section class="section band-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">จุดเด่นของเรา</span>
+      <h2>เหตุผลที่ชาวนาไว้วางใจเลือกเรา</h2>
+    </div>
+    <div class="feat-grid" id="featGrid">
+      <div class="feat-card"><div class="feat-icon">✓</div><h3>เมล็ดพันธุ์คุณภาพ</h3><p>คัดเมล็ดพันธุ์จากแหล่งที่เชื่อถือได้ ก่อนถึงมือลูกค้าทุกล็อต</p></div>
+      <div class="feat-card"><div class="feat-icon">✓</div><h3>คัดเลือกมาตรฐาน</h3><p>ตรวจสอบคุณภาพเมล็ดพันธุ์ตามมาตรฐานก่อนจำหน่าย</p></div>
+      <div class="feat-card"><div class="feat-icon">✓</div><h3>ส่งตรงถึงชาวนา</h3><p>บริการจัดส่งถึงพื้นที่ อำเภอเก้าเลี้ยวและใกล้เคียง</p></div>
+      <div class="feat-card"><div class="feat-icon">✓</div><h3>เหมาะกับพื้นที่ปลูก</h3><p>แนะนำพันธุ์ข้าวที่เหมาะกับสภาพนาและฤดูกาลของคุณ</p></div>
+      <div class="feat-card"><div class="feat-icon">✓</div><h3>พร้อมให้คำแนะนำ</h3><p>ปรึกษาการเลือกพันธุ์และการปลูกได้ทุกครั้งที่โทรมา</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section band-white" id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">ผลิตภัณฑ์ของเรา</span>
+      <h2>พันธุ์ข้าวที่จำหน่าย</h2>
+      <p>คัดสรรพันธุ์ข้าวหลากหลาย ทั้งข้าวหอมและข้าวเจ้าไม่ไวแสง เหมาะกับทุกสภาพนา สอบถามพันธุ์ที่เหมาะกับพื้นที่ของท่านได้ทางโทรศัพท์</p>
+    </div>
+    <div class="prod-grid" id="prodGrid"></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section band-cream" id="why">
+  <div class="wrap">
+    <div class="why-head reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">ทำไมต้องเลือกเรา</span>
+        <h2>มาตรฐานที่เรายึดถือในทุกการขาย</h2>
+        <p>ทุกกำมือที่ส่งถึงมือลูกค้า ผ่านการคัดเลือกด้วยความใส่ใจ ไม่ใช่แค่ตัวเลข แต่คือความไว้วางใจที่เราตั้งใจรักษาไว้</p>
+      </div>
+      <img class="why-photo" src="public/images/hero-rice-hands.jpg" alt="เมล็ดพันธุ์ข้าวคัดสรรด้วยมือ" loading="lazy">
+    </div>
+    <div class="feat-grid" style="margin-top:36px;">
+      <div class="feat-card"><div class="feat-icon">🌾</div><h3>คัดเมล็ดทุกล็อต</h3><p>ไม่ปล่อยผ่านเมล็ดพันธุ์ที่ไม่ได้มาตรฐานออกสู่ตลาด</p></div>
+      <div class="feat-card"><div class="feat-icon">🚚</div><h3>ส่งมอบตรงเวลา</h3><p>วางแผนจัดส่งให้ทันฤดูกาลเพาะปลูกของลูกค้า</p></div>
+      <div class="feat-card"><div class="feat-icon">⚖️</div><h3>ราคายุติธรรม</h3><p>ราคาที่เหมาะสมกับคุณภาพ เป็นธรรมกับทุกฝ่าย</p></div>
+      <div class="feat-card"><div class="feat-icon">🤝</div><h3>บริการหลังการขาย</h3><p>พร้อมดูแลและตอบคำถามแม้หลังการซื้อขายแล้ว</p></div>
+      <div class="feat-card"><div class="feat-icon">📖</div><h3>คำแนะนำการปลูก</h3><p>ให้คำปรึกษาเรื่องการปลูกและดูแลตามพันธุ์ที่เลือก</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENTS -->
+<section class="section band-forest" id="segments">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" style="color:#FCEFC7;">กลุ่มลูกค้า</span>
+      <h2>เราให้บริการลูกค้าทุกขนาด</h2>
+    </div>
+    <div class="seg-grid">
+      <div class="seg-card"><div class="feat-icon">🧑‍🌾</div><h3>ชาวนารายย่อย</h3><p>เลือกซื้อเมล็ดพันธุ์จำนวนพอเหมาะ พร้อมคำแนะนำการเลือกพันธุ์</p></div>
+      <div class="seg-card"><div class="feat-icon">🚜</div><h3>ชาวนามืออาชีพ</h3><p>รองรับปริมาณการสั่งซื้อจำนวนมาก พร้อมพันธุ์ข้าวหลากหลาย</p></div>
+      <div class="seg-card"><div class="feat-icon">🏢</div><h3>สหกรณ์การเกษตร</h3><p>บริการจัดหาเมล็ดพันธุ์สำหรับกลุ่มสมาชิก พร้อมใบเสนอราคา</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="section band-white" id="steps">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">ขั้นตอนการสั่งซื้อ</span>
+      <h2>สั่งซื้อง่าย เพียง 4 ขั้นตอน</h2>
+    </div>
+    <div class="steps" style="max-width:520px;">
+      <div class="step"><div class="step-num">1</div><div class="step-line"></div><div class="step-content"><h4>โทรสอบถาม</h4><p>โทร 089-959-3342 แจ้งพื้นที่ปลูกและความต้องการ</p></div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-line"></div><div class="step-content"><h4>เลือกพันธุ์</h4><p>รับคำแนะนำพันธุ์ข้าวที่เหมาะกับพื้นที่ของท่าน</p></div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-line"></div><div class="step-content"><h4>ยืนยันจำนวน</h4><p>แจ้งปริมาณและรับใบเสนอราคา (สำหรับสหกรณ์/กลุ่มเกษตรกร)</p></div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-content"><h4>จัดส่ง</h4><p>รับเมล็ดพันธุ์ถึงพื้นที่ตามวันนัดหมาย</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section band-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">รีวิวลูกค้า</span>
+      <h2>เสียงตอบรับจากผู้ใช้จริง</h2>
+      <p>ตัวอย่างข้อมูล สามารถแก้ไขเป็นรีวิวจริงได้ภายหลัง</p>
+    </div>
+    <div class="review-track">
+      <div class="review-card"><div class="stars">★★★★★</div><p>เมล็ดพันธุ์งอกดี ผลผลิตตามที่คาดไว้ สั่งซื้อสะดวก โทรสอบถามได้ตลอด</p><div class="review-who">คุณสมชาย</div><div class="review-role">ชาวนา อ.เก้าเลี้ยว</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>ทางร้านให้คำแนะนำพันธุ์ที่เหมาะกับพื้นที่นาของกลุ่มเราได้ดีมาก</p><div class="review-who">คุณประภา</div><div class="review-role">ตัวแทนสหกรณ์การเกษตร</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>ส่งของตรงเวลา คุณภาพเมล็ดพันธุ์ดี ราคาเหมาะสม</p><div class="review-who">คุณวิรัตน์</div><div class="review-role">ชาวนามืออาชีพ</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section band-white" id="faq">
+  <div class="wrap" style="max-width:820px;">
+    <div class="section-head reveal">
+      <span class="eyebrow">คำถามที่พบบ่อย</span>
+      <h2>คำถามที่ลูกค้าถามบ่อย</h2>
+    </div>
+    <div id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">เมล็ดพันธุ์รับประกันไหม<span class="plus">+</span></button>
+        <div class="faq-a"><p>เมล็ดพันธุ์ทุกล็อตผ่านการคัดเลือกตามมาตรฐานก่อนจำหน่าย หากมีข้อสงสัยด้านคุณภาพ สามารถแจ้งทางร้านได้ทันที</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">ส่งต่างจังหวัดไหม<span class="plus">+</span></button>
+        <div class="faq-a"><p>บริการหลักอยู่ในพื้นที่อำเภอเก้าเลี้ยวและจังหวัดนครสวรรค์ สำหรับพื้นที่อื่นสามารถโทรสอบถามเงื่อนไขการจัดส่งได้</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">ซื้อจำนวนมากลดหรือไม่<span class="plus">+</span></button>
+        <div class="faq-a"><p>สำหรับกลุ่มเกษตรกรและสหกรณ์ที่สั่งซื้อจำนวนมาก สามารถโทรขอใบเสนอราคาพิเศษได้</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">เลือกพันธุ์ข้าวอย่างไรให้เหมาะกับพื้นที่<span class="plus">+</span></button>
+        <div class="faq-a"><p>ทางร้านยินดีให้คำแนะนำตามลักษณะพื้นที่นา แหล่งน้ำ และฤดูกาลปลูกของท่าน เพียงโทรแจ้งรายละเอียดเบื้องต้น</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section band-cream" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">ติดต่อเรา</span>
+      <h2>พร้อมให้บริการทุกวัน</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="map-box" id="mapBox">
+        📍 แผนที่ร้านบุญเลิศ เมล็ดพันธุ์ข้าว<br>(ใส่ลิงก์ Google Maps ได้ที่นี่)
+      </div>
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="ic">📞</div>
+          <div><div style="font-size:13px;color:#888;">โทรศัพท์</div><a class="phone-link" href="tel:0899593342">089-959-3342</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic">📍</div>
+          <div><div style="font-size:13px;color:#888;">พื้นที่ให้บริการ</div><div style="font-weight:600;">อำเภอเก้าเลี้ยว จังหวัดนครสวรรค์</div></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic">🕒</div>
+          <div><div style="font-size:13px;color:#888;">เวลาทำการ</div><div style="font-weight:600;">ทุกวัน 07:00 – 18:00 น.</div></div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;">
+          <a href="tel:0899593342" class="btn btn-primary" style="flex:1;">โทรทันที</a>
+          <a href="#" class="btn" style="flex:1;background:#EFE9DA;color:var(--brown);" id="mapLink">เปิด Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <h3>ร้านบุญเลิศ เมล็ดพันธุ์ข้าว</h3>
+        <p>คัดเมล็ดพันธุ์ดี เพื่อผลผลิตที่มั่นใจ</p>
+      </div>
+      <div>
+        <div style="font-family:'Kanit';font-weight:600;color:#fff;margin-bottom:8px;">ติดต่อ</div>
+        <div style="font-size:14px;">โทร 089-959-3342</div>
+        <div style="font-size:14px;">อ.เก้าเลี้ยว จ.นครสวรรค์</div>
+      </div>
+      <div>
+        <div style="font-family:'Kanit';font-weight:600;color:#fff;margin-bottom:8px;">ช่องทางอื่น</div>
+        <div style="display:flex;gap:12px;font-size:14px;">
+          <a href="#">Line</a><a href="#">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-copy">© 2026 Bunlert Rice Seed</div>
+  </div>
+</footer>
+
+<!-- Floating actions -->
+<div class="floating">
+  <a href="#top" class="fab top" id="fabTop" aria-label="กลับด้านบน">↑</a>
+  <a href="#" class="fab line" id="fabLine" aria-label="Line" target="_blank" rel="noopener">L</a>
+  <a href="#" class="fab map" id="fabMap" aria-label="Google Maps" target="_blank" rel="noopener">📍</a>
+  <a href="tel:0899593342" class="fab call" aria-label="โทรศัพท์">📞</a>
+</div>
+
+<!-- Bottom nav (mobile) -->
+<nav class="bottom-nav">
+  <a class="bn-item active" href="#top">🏠<span>หน้าแรก</span></a>
+  <a class="bn-item" href="#products">🌾<span>สินค้า</span></a>
+  <a class="bn-item" href="#contact">📍<span>แผนที่</span></a>
+  <a class="bn-item" href="tel:0899593342">📞<span>โทร</span></a>
+</nav>
+
+<script>
+  // header shrink + back-to-top
+  const header = document.getElementById('siteHeader');
+  const fabTop = document.getElementById('fabTop');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 30);
+    fabTop.classList.toggle('show', y > 500);
+  });
+
+  // reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal, .feat-card, .prod-card');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.15});
+  revealEls.forEach(el=>io.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    q.addEventListener('click', ()=>{
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight=null;});
+      if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight+'px'; }
+    });
+  });
+
+  // products render
+  const svgWheat = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M8 6c0 2 2 3 4 3s4-1 4-3M8 11c0 2 2 3 4 3s4-1 4-3M8 16c0 2 2 3 4 3s4-1 4-3"/></svg>`;
+  fetch('public/products.json').then(r=>r.json()).then(renderProducts).catch(()=>renderProducts(FALLBACK_PRODUCTS));
+
+  const FALLBACK_PRODUCTS = [
+    {"name":"กข 43","type":"ข้าวเจ้าไม่ไวแสง อายุสั้น","highlight":"อายุเก็บเกี่ยวสั้น ปลูกได้หลายรอบต่อปี","link":"https://www.kla-krang.com/%E0%B8%81%E0%B8%82-43-168652.product"},
+    {"name":"กข 79","type":"ข้าวเจ้าไม่ไวแสง","highlight":"พันธุ์รับรองใหม่ ให้ผลผลิตดี","link":"https://www.kla-krang.com/%E0%B8%81%E0%B8%82-79-168616.product"},
+    {"name":"กข 61","type":"ข้าวเจ้าไม่ไวแสง","highlight":"ต้านทานโรคได้ดี เหมาะกับนาชลประทาน","link":"https://www.kla-krang.com/%E0%B8%81%E0%B8%82-61-168614.product"},
+    {"name":"ขาวดอกมะลิ 105 (หอมมะลิ)","type":"ข้าวหอมไวแสง","highlight":"ข้าวหอมมะลิแท้ เมล็ดเรียวยาว หุงขึ้นหม้อ","link":"https://www.kla-krang.com/%E0%B8%82%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%A1%E0%B8%B0%E0%B8%A5%E0%B8%B4-105%E0%B8%AB%E0%B8%AD%E0%B8%A1%E0%B8%A1%E0%B8%B0%E0%B8%A5%E0%B8%B4-168613.product"},
+    {"name":"ปทุมธานี 1 (หอมปทุม)","type":"ข้าวหอมไม่ไวแสง","highlight":"ปลูกได้ตลอดปี กลิ่นหอมใกล้เคียงมะลิ","link":"https://www.kla-krang.com/%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-1%E0%B8%AB%E0%B8%AD%E0%B8%A1%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1-168612.product"},
+    {"name":"พิษณุโลก 2","type":"ข้าวเจ้าไม่ไวแสง","highlight":"ให้ผลผลิตสูง เหมาะกับนาชลประทาน","link":"https://www.kla-krang.com/%E0%B8%9E%E0%B8%B4%E0%B8%A9%E0%B8%93%E0%B8%B8%E0%B9%82%E0%B8%A5%E0%B8%81-2-168611.product"},
+    {"name":"ชัยนาท 1","type":"ข้าวเจ้าไม่ไวแสง","highlight":"ลำต้นแข็ง ต้านทานการหักล้ม","link":"https://www.kla-krang.com/%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%97-1-168609.product"},
+    {"name":"กข 31","type":"ข้าวเจ้าไม่ไวแสง","highlight":"พันธุ์ยอดนิยม ปลูกแพร่หลาย","link":"https://www.kla-krang.com/%E0%B8%81%E0%B8%82-31-168587.product"},
+    {"name":"กข 57","type":"ข้าวเจ้าไม่ไวแสง","highlight":"ต้านทานเพลี้ยกระโดดสีน้ำตาล","link":"https://www.kla-krang.com/%E0%B8%81%E0%B8%82-57-168582.product"},
+    {"name":"กข 29","type":"ข้าวเจ้าไม่ไวแสง","highlight":"ให้ผลผลิตต่อไร่สูง","link":"https://www.kla-krang.com/%E0%B8%81%E0%B8%82-29-168576.product"},
+    {"name":"กข 49","type":"ข้าวเจ้าไม่ไวแสง","highlight":"คุณภาพเมล็ดดี เหมาะแปรรูป","link":"https://www.kla-krang.com/%E0%B8%81%E0%B8%82-49-168573.product"},
+    {"name":"กข 41","type":"ข้าวเจ้าไม่ไวแสง","highlight":"ปรับตัวได้ดีในหลายสภาพพื้นที่","link":"https://www.kla-krang.com/%E0%B8%81%E0%B8%82-41-168568.product"}
+  ];
+
+  function renderProducts(list){
+    const grid = document.getElementById('prodGrid');
+    grid.innerHTML = list.map(p => `
+      <div class="prod-card">
+        <div class="prod-top">${svgWheat}</div>
+        <div class="prod-body">
+          <span class="prod-tag">${p.type}</span>
+          <h3>${p.name}</h3>
+          <p>${p.highlight}</p>
+          <div class="prod-actions">
+            <a class="call" href="tel:0899593342">โทรสอบถาม</a>
+            <a class="info" href="${p.link}" target="_blank" rel="noopener">ดูรายละเอียด</a>
+          </div>
+        </div>
+      </div>
+    `).join('');
+    document.querySelectorAll('.prod-card').forEach(el=>io.observe(el));
+  }
+
+  // Google Maps / Line placeholders — replace href with real links when available
+  document.getElementById('mapLink').href = 'https://maps.google.com/?q=%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%8D%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%A8+%E0%B9%80%E0%B8%A1%E0%B8%A5%E0%B9%87%E0%B8%94%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7';
+  document.getElementById('fabMap').href = document.getElementById('mapLink').href;
+  document.getElementById('fabLine').href = 'https://line.me/';
+</script>
+</body>
+</html>
